@@ -1,0 +1,108 @@
+---
+layout: default
+title: kies activiteit
+---
+
+<section class="action">
+	<h3></h3>
+	<form action="" class="form_action">
+	<p class="placeholderErrorMessage"></p>
+	<label for="activiteit">Kies activiteit</label>
+		<select name="activiteit" class="activiteit">
+			<option value="">Kies een activiteit</option>
+			<option value="uitlaten">uitlaten</option>
+			<option value="oppassen">oppassen</option>
+			<option value="ontmoeten">ontmoeten</option>
+		</select>
+		
+		<label for="hond">Hond:</label>
+		<input type="text" name="hond" value="blacky" disabled id="hondnaam">
+		<label for="locatie" class="straatnaam">Straatnaam:</label>
+		<label for="nummer" class="nummer">Nr:</label>
+		<input type="text" name="locatie" placeholder="Straatnaam" class="straatnaam">
+		
+		<input type="number" name="nummer" placeholder="Nr" class="nummer">
+		<div id="tijd">
+			<label for="startdatum" class="tijd date">Start datum:</label>
+			<label for="startuur" class="tijd rechts">Start uur:</label>
+			<input type="date" name="startdatum" class="tijd date">
+			<input type="time" name="startuur" class="tijd rechts">
+
+			<label for="stopdatum" class="tijd date">Eind datum:</label>
+			<label for="stopuur" class="tijd rechts">Eind uur:</label>
+			<input type="date" name="stopdatum" class="tijd date">
+			<input type="time" name="stopuur" class="tijd rechts">
+				
+		</div>
+
+		<label for="herhaling" class="herhaling">Herhaling:</label>
+		<select name="herhaling" class="herhaling">
+			<option value="">geen herhaling</option>
+			<option value="dagelijks">dagelijks</option>
+			<option value="wekelijks">wekelijks</option>
+			<option value="maandelijks">maandelijks</option>
+		</select>		
+		
+		<input type="submit" name="toevoegen" value="toevoegen"	class="btn" id="activiteittoevoegen">
+	</form>
+</section>
+
+
+<!-- 
+<section class="action">
+	<h3>Zoek naar activiteiten</h3>
+	<ul class="zoek">
+		<li>
+			<a href="">
+				Uitlaten
+				<i class=" uitlaten flaticon-dog-with-belt-walking-with-a-man"></i>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				Opassen
+				<i class="
+oppassen flaticon-dog-and-pets-house"></i>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				Afspreken 
+				
+				<i class="afspreken flaticon-dog-in-front-of-a-man"></i>
+			</a>
+		</li>
+	</ul>
+
+
+	<h3>Eigen activiteiten</h3>
+	<ul class="eigen">
+		<li>
+			<a href="">
+				Honden voorzieningen 
+				<i class="voorzieningen flaticon-dog-shitting"></i>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				Activiteit toevoegen 
+				<i class="toevoegen fa fa-plus"></i>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				Mijn Profiel
+				 <i class="fa fa-user"></i>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				Uitloggen 
+				<i class="uitloggen fa fa-sign-out"></i>
+			</a>
+		</li>
+	</ul>
+
+</section>
+
+-->

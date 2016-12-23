@@ -1,0 +1,54 @@
+---
+layout: default
+title: browse activiteiten
+---
+
+<section class="browse">
+	<h3></h3>
+	<aside class="filter">
+	<form action="" class="form_browse">
+		<h3>Filter<i class="toggleFilter fa-times fa"></i></h3>
+		<label for="activiteit">Kies activiteit: </label>
+		<select name="activiteit" class="activiteit">
+			<option value="">Kies een activiteit</option>
+			<option value="uitlaten">uitlaten</option>
+			<option value="oppassen">oppassen</option>
+			<option value="ontmoeten">ontmoeten</option>
+		</select>
+		<label for="locatie">Locatie:</label>
+		<input type="text" name="locatie">
+		<div class="form-group">
+		<label for="startDatum">Start datum:</label>
+		<input type="date" name="startDatum">
+		</div>
+		<div class="form-group">
+		<label for="startUur">Start tijd:</label>
+		<input type="time" name="startUur">
+		</div>
+		<div class="form-group">
+		<label for="stopDatum">Eind datum:</label>
+		<input type="date" name="stopDatum">
+		</div>
+		<div class="form-group">
+		<label for="stopUur">Eind tijd</label>
+		<input type="time" name="stopUur">
+		</div>
+		<button class="btn btnFilter">Zoek</button>
+		<button class="btn btnReset">Reset</button>
+	</form>
+	</aside>
+	<div>
+		<i class="toggleFilter fa-search fa"></i>
+		<i class="toggleMap fa-list fa"></i>
+	</div>
+	<div class="map">
+	</div>
+	<div class="placeholderMap">
+	<i class="fa fa-times sluiten"></i>
+		<div class="placeholderMapList">
+		</div>
+	</div>
+	<ul class="browseList">
+		
+	</ul>
+</section>
