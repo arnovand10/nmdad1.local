@@ -10,7 +10,7 @@ function Profile(){
     this.locatie;
     this.status;
 
-    this.mijnActiviteiten;
+	//this.mijnActiviteiten;
     this.opgeslagenActiviteiten;
 
       
