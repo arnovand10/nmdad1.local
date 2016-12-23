@@ -1,0 +1,108 @@
+.babout{
+	margin: 0;
+	z-index: -1;
+	position: absolute;
+	top: 100vh;
+	width: 100vw;
+	height: 200vh;
+	background-color: white;
+}
+
+.about{
+	h1{
+		padding-top: 50px;	
+	}
+	
+	margin-left: 12.5%;
+	width: 75%;
+	background-color: white;
+	z-index:-2;
+	margin-top: 0;
+	padding-bottom: 50px;
+}
+
+.circle{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: $blauw;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.rectholder{
+	width: 125px;
+	text-align: center;
+	vertical-align: middle;
+	i{
+		color: $blauw;
+	}
+	i.fa-arrow-right{
+		display: none;
+	}
+}
+
+.uitlenen,.lenen{
+	display: inline-block;
+	width: 48%;
+	margin-left: auto;
+
+}
+
+.group-wij{
+	img{
+		width: 45%;
+		height: auto;
+		display: inline-block;
+	}
+	.wijInfo{
+		display: inline-block;
+		width: 100%;
+		text-align: initial;
+	}
+}
+
+@media screen and (min-width: 850px){
+	i.fa-arrow-down{
+		display: none;
+	}
+
+	.rectholder{
+		display: table-cell;
+		height: 125px;
+		i.fa-arrow-right{
+			display: inline;
+			color: $blauw;
+		}
+	}
+	.uitlenen, .lenen{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		h4{
+			text-align: center;
+		}
+		.group{
+			display: inline-block;
+			margin-left: 6%;
+			margin-right: 6%;
+		}
+	}
+	.group-wij{
+		display: block;
+		img{
+			width: 20%;
+			display: inline-block;
+		}
+		.wijInfo{
+			h4{
+				margin-top:0;
+				padding: 0;
+			}
+			display: inline-block;
+			width: 65%;
+		}
+	}
+}

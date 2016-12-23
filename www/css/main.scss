@@ -1,0 +1,73 @@
+---
+---
+@charset "UTF-8";
+
+// 1. Vendors
+@import
+  'vendors/normalize';
+
+// 2. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/lists',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/placeholders';
+
+
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/font-awesome/font-awesome',
+  'base/font-dogs/font/flaticon',
+  'base/typography',
+  'base/helpers',
+  'base/animations';
+
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/navigation',
+  'layout/grid',
+  'layout/forms',
+  'layout/profiles';
+
+// 5. Components
+@import
+  'components/button',
+  'components/buttons',
+  'components/carousel',
+  'components/cover',
+  'components/dropdown';
+
+
+// 6. Page-specific styles
+@import
+  'pages/home',
+  'pages/register',
+  'pages/contact',
+  'pages/about';
+// 7. Themes
+@import
+  'themes/default';
+
+//8. font-awesome
+@import "base/font-awesome/variables";
+@import "base/font-awesome/mixins";
+@import "base/font-awesome/path";
+@import "base/font-awesome/core";
+@import "base/font-awesome/larger";
+@import "base/font-awesome/fixed-width";
+@import "base/font-awesome/list";
+@import "base/font-awesome/bordered-pulled";
+@import "base/font-awesome/animated";
+@import "base/font-awesome/rotated-flipped";
+@import "base/font-awesome/stacked";
+@import "base/font-awesome/icons";
+@import "base/font-awesome/screen-reader";
+
+

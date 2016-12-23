@@ -1,0 +1,133 @@
+.profiles{
+	$listBgColor: rgba(238,238,238,1);
+	font-size: 0.9rem;
+
+	ul{
+		height: 20%;
+		margin-bottom: 0%;
+		padding: 0;
+		list-style-type: none;
+		
+		.locatie{
+			width: 89%;
+			float: left;
+			margin-left: 1%;
+		}
+		.activity, .profile{
+
+			margin-bottom: 1%;
+			background-color: $listBgColor;
+			span{
+				font-weight: bold;
+				float:left;
+				width: 50%;
+				margin-right: 39%;
+				margin-left:1%;
+			}
+			ul{
+				margin-left: 1%;
+				float: left;
+				width: 43%;
+			}
+		}
+	}
+}
+
+.profile{
+	span{
+		width: 100%;
+	}
+	ul{
+		width: 60% !important;
+	}
+	.profilepic>img{
+		float:left;
+		height: 14vh;
+		width: 28%;
+		height: auto;
+		background-repeat: no-repeat;
+		border: none;
+		margin-left: 1%;
+		margin-top: 1vh;
+	}
+}
+
+.action{
+	font-size: 1rem;
+	ul{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+
+		li{
+			list-style-type: none;
+			height: 10vh;
+			margin-bottom: 0.25vh;
+
+			a{
+				padding-left: 2vw;
+				text-decoration: none;
+				color: white;
+				font-size: 1rem;
+				line-height: 10vh;
+				i{
+					float: right;
+					padding-right: 10vw;
+				}
+			}
+		}	
+	}
+	.zoek{
+			li{
+				background-color: $oranje;
+				border: solid 2px $blauw;
+				margin-bottom: 1vh;	
+			}
+	}
+	.eigen{
+		li{
+			background-color: $geel;
+			border: solid 2px $blauw;
+			i{
+				line-height: 10vh;
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+.browse, .activities{
+	$listBgColor: rgba(238,238,238,1);
+	font-size: 1.2rem;
+
+	ul{
+		right: 1%;
+		left: 2%;
+		margin-bottom: 0%;
+		padding: 0;
+		list-style-type: none;
+		.locatie{
+			width: 79%;
+			margin-left: 1%;
+			margin-right: 0;
+		}
+		.activity, .profile{
+			box-shadow: 0px 1px 2px;
+			width: auto;
+			margin-bottom: 1%;
+			background-color: $listBgColor;
+			span{
+				font-weight: bold;
+				text-transform: capitalize;
+			}
+			ul{
+				padding-top: 2%;
+				padding-bottom: 2%;
+				display: inline-block;
+				margin-left: 1%;
+				width: 79%;
+			}
+		}
+	}
+}
+

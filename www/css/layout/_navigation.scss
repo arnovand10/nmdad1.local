@@ -1,0 +1,137 @@
+
+	.hamburger{
+		z-index: 999;
+		display: block;
+		position: fixed;
+		right:0;
+		opacity: 1;
+		padding: 5px;
+		top: 0;
+		i{
+			color: $grijs;
+		}
+	}
+	.navigatie{
+		box-shadow: -2px 0px 5px #888888;
+		position: fixed;
+		z-index: 100;
+		right: -70vw;
+		background-color: $blauw;;
+		top: 50px;
+		height: 95vh;
+		width: 70vw;
+		ul{
+			padding: 0;
+			margin:0;
+			h3{
+				font-size:1.2rem;
+				padding-left: 5%;
+				color: white;
+				margin: 0;
+				padding-top: 2vh;
+				padding-bottom: 2vh;
+			}
+			li{
+				width: 100%;
+				list-style-type: none;
+				background-color: $blauw;
+				padding-bottom: 1%;
+				height: 8vh;
+				border-top: 1px solid rgba(22,51,79,1);
+
+				a{
+					display: block;
+					padding-left: 5%;
+					text-decoration: none;
+					color: white;
+					font-size: 1rem;
+					line-height: 2.5rem;
+					i{
+						width: 6vw;
+						text-align: left;
+						padding-right: 15%;
+						height: 100%;
+						line-height: 2.5rem;
+						float: left;
+					}
+				}
+			}	
+		}
+	}
+
+@media screen and(min-width: 850px){
+	.header{
+		width: 50vw;
+		height: 50px;
+		border: transparent;
+		box-shadow: none;
+	}
+	.hamburger{
+		display: none;
+	}
+	.headerTitle{
+		height: 50px;
+	}
+	.navigatie{
+		position:fixed;
+		border: transparent;
+		left:0;
+		top: 0;
+		width: 100vw;
+		height: 50px;
+		background-color: $blauw;
+		box-shadow: none;
+		nav{
+			ul{
+				h3{
+					display: none;
+				}
+
+				margin-left: 50vw;
+				li{
+					float: left;
+					width: 12.5vw;
+					overflow: hidden;
+					height: 50px;
+					text-align: center;
+					border: transparent;
+					a{
+						padding: 0;
+						i{
+							display: none;
+						}
+					}
+				}
+				li:hover{
+					background-color: $geel;
+					a{
+						color: $blauw;
+					}
+				}
+				div{
+					background-color: $blauw;
+					position: fixed;
+					top: 50px;
+					left:0;
+					width: 100vw;
+					height: 50px;;
+					align-text: centre;
+					li{
+						width: 16.66vw;
+						height: 50px;
+						padding-left: 10px;
+						padding-right: 10px;
+						text-align: center;
+					}
+					li:hover{
+						background-color: $geel;
+						a{
+							color: $blauw;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}

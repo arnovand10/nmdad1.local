@@ -1,0 +1,68 @@
+.btn{
+	margin-top: 6%;
+	width: 100%;
+	padding: 6px 12px;
+	background-color: $blauw;
+	border: solid $grijs 2px;
+	text-transform: uppercase;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 1rem;
+	color: white;
+	a{
+		color: white;
+		text-decoration: none;
+	}
+}
+
+#btnreg{
+	background-color: transparent;
+	border: solid $blauw 2px;
+	a{
+		color: $blauw;
+	}
+}
+
+#regreg{
+	height: 2rem;
+}
+
+.btn_X{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 20%;
+	height: 20%;
+	border: none;
+	color: $blauw;
+	background-color: transparent;
+	font-size: 1.5rem;
+	position: relative;
+	float: right;
+}
+
+.btnprofiel{
+	padding: 6px 12px;
+}
+
+@media screen and (min-width: 700px){
+	.btn{
+		width: 50%;
+		margin: 10px auto;
+	}
+
+	.btn:hover{
+		color: $blauw;
+		background-color: $geel;
+		border: 2px solid $blauw;
+	}
+	#regreg{
+		margin-top: 25px;
+	}
+	#btnreg:hover{
+		background-color: $geel;
+		a{
+			background-color: $geel;	
+		}
+		
+	}
+}

@@ -1,0 +1,125 @@
+.map{
+	position: absolute;
+	height: 70vh;
+	width:  96vw;
+}
+
+.placeholderErrorMessage{
+	color: red;
+	background-color: rgba(255,0,0,0.1);
+	text-align: center;
+}
+
+#warning{
+	background-color:  transparent;
+	margin-left: 1%;
+	color: #345f89;
+	color: red;
+	padding: 6px;
+	padding: 0;
+	width: 98%;
+	text-align: center;
+}
+
+.placeholderMap{
+		width: 96%;
+		min-height: 60%;
+		background-color: white;
+		z-index: 3;
+		position: absolute;
+		top: 100%;
+		border-top: solid 2px $blauw;
+		display: none;
+		i{
+			float: right;
+			padding: 10px;
+		}
+		ul{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+.browse{
+	.toggleMap, .toggleFilter{
+	padding: 10px;
+	background-color: $blauw;
+	color: white;
+	}
+	.toggleMap:hover, .toggleFilter:hover{
+		color: $blauw;
+		background-color: $geel;
+	}
+	aside{
+			position: fixed;
+			z-index: 100;
+			left:  -70vw;
+			background-color: $blauw;
+			margin: 0;
+			top: 50px;
+			height: 95vh;
+			width: 70vw;
+			h3{
+				font-size: 1.2 rem;
+				margin-left: 2%;
+				margin-left: 2%;
+				color: white;
+				width: 96%;
+				i{
+					float: right;
+				}
+			}
+			form{
+				margin-left: 2%;
+				marin-right: 2%;
+				width: 100%;
+				input, label, select{
+					width: 96%;
+					margin: 0;
+					margin-bottom: 10px;
+				}
+				.form-group{
+					display: inline-block;
+					width: 48%;	
+				}
+				label{
+					color: white;
+				}
+				button{
+					margin-left: 0;
+					width: 96%;
+					
+				}
+			}	
+	}
+}
+
+@media screen and (min-width: 960px){
+	.browse{
+		aside{
+			top: 100px;
+			width: 25vw;
+			form{
+				button{
+					width: 45%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width:700px){
+	.map{
+		width: 96%;
+		height: 70%;
+
+	}
+	.placeholderMap{
+		width: 96%;
+		min-height: 30%;
+		background-color: white;
+		z-index: 2;
+		position: absolute;
+		top: 80%;
+	}
+}

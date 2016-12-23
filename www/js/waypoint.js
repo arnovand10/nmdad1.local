@@ -80,7 +80,7 @@ function updateHeaderTitle(){
 		titleValue.text("Opgeslagen activiteiten");
 	}
 	else if(url=="_pages/hondenvoorzieningen.html"){
-		titleValue.text("Hondenvoorzieningen");
+		titleValue.text("Honden toiletten");
 	}
 	else if(url=="_pages/editmyprofile.html"){
 		titleValue.text("Profiel aanpassen");

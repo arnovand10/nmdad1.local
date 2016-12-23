@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+} 
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+$content-width: 800px;
+$main: #19CCAA;
+$font-style: 'Open Sans', sans-serif;
+$font-color: #262626;
+$link-color: #425469;
+$link-hover-color: $main;
+$heading-font: 'Muli', sans-serif;
+$heading-font-color: #425469;
+$light: #E7EDF4;
+$header:  #1D1425;
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+  color: $blauw;
+}
+
+
+section{
+  min-height: 100vh;
+  margin-top: 60px;
+}  
+
+
+h1{
+  margin-top: 1%;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+p{
+  font-size: 1rem;
+}
+
+
+main{
+  position: relative;
+}
+@media screen and (min-width: 911px){
+  main{
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 850px){
+   
+    .profilePictureBig{
+          height: 50vh;
+    }
+  .profiel, .myprofilePageEdit, .browse, .myProfile, .activities, .hondenvoorzieningen{
+    margin-top: 150px;
+    select{
+        margin-left: 0;
+    }
+     
+      .btn{
+        height: auto;
+      }
+    
+    }
+  }
+

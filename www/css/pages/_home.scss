@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.bhome{
+	margin: 0;
+    z-index: -5;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url(img/home.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+.home{
+	div{
+		display: block;
+		h1,h2,h3{
+			font-family: "MV Boli";
+			margin: 0;
+		}
+		h1{
+			font-size: 4em;;
+			color: $geel;
+			text-align: left;
+		}
+		h2{
+			font-size: 1.5rem;
+			color: $grijs;
+			text-align: center;
+		}
+		h3{
+			color: $blauw;
+			text-align: right;
+			padding-top: 1rem;
+			font-size: 1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 701px){
+	.home{
+		div{
+			width: 60%;
+			display: block;
+			margin: 0 auto;
+
+			margin-top: 20vh;
+			margin-bottom: 20vh;
+		}
+	}
+	.bhome{
+		background-image: url(img/wildlife-photography-pet-photography-dog-animal-159541.jpeg);
+		background-position: 25vw 0;
+	}
+}

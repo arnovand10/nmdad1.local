@@ -1,0 +1,150 @@
+form{
+	input,label,select{
+		width: 100%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		color: $blauw;
+		font-size: 1rem;
+	}
+
+	input,select{
+
+		border: 2px solid $blauw;
+		background-color: white;
+		padding: 6px 12px;
+	}
+}
+
+
+.form_home{
+	margin-left: 10%;
+	width: 80%;
+}
+
+
+.form_action{
+	margin-left: 10%;
+	width: 80%;
+	label{
+		margin: 0;
+		width: 46vw;
+	}
+
+	.straatnaam{
+		width: 43vw;
+	}
+
+	.nummer{
+		width:23vw;
+		float: right;
+	}
+
+	.tijd{
+		width: 43vw;
+		float: left;
+	}
+
+	.rechts{
+		float: right;
+		width: 23vw;
+	}
+
+	#tijd{
+		
+		margin: 0;
+	}
+
+	#tijd>label{
+		margin: 0;
+	}
+
+	.herhaling{
+		display: block;
+	}
+
+	.btn{
+		color: white;
+	}
+}
+
+#bestandkiezen{
+	border:0;
+	margin: 0;
+	padding: 0;
+}
+
+
+@media screen and (min-width: 700px){
+	form{
+		input,label,button,select{
+			display: block;
+			width: 50%;
+			margin: 10px auto;
+		}
+	}
+	.form_register{
+		input,label,button,select{
+			display: block;
+			width: 50%;
+			margin: 10px 0;
+		}
+	}
+
+	.form_action{
+		margin-top: 150px;
+		input, label, select{
+		display: block;
+		margin:0;
+		margin-bottom: 6px;
+		margin-top: 6px;
+		float: left;
+		width: 50%;
+		}
+		label{
+		width: 100%;
+		}
+		#hondnaam{
+			width: 50%;
+		}
+		label.straatnaam{
+			widht:100%;
+		}
+		input.straatnaam{
+			width: 50%;
+			margin-right: 50%;
+		}
+		.nummer{
+			display: none;
+		}
+		select{
+			width: 50%;
+			margin-right:50%;
+		}
+		.date{
+			width: 23%;
+		}
+		input.date{
+		}
+		.rechts{
+			float: left;
+			width: 22%;
+			margin-left: 5%;
+		}
+		#tijd{
+			margin-top: 20px;
+			label.rechts{
+				margin-left: 5%;
+				margin-right: 50%;
+			}
+			input.rechts{
+				margin-right: 50%;
+			}
+		}
+	}
+
+	.form_myprofilePageEdit{
+		select{
+			margin-left: auto;
+		}
+	}
+}

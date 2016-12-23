@@ -1,0 +1,17 @@
+@media screen and(min-width: 700px){
+
+$columns: 12;
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: 960px / ($columns/$i);
+    display: block;
+    float: left;
+    margin: 0;
+   }
+}
+	
+}
+section{
+	margin-left: 2%;
+	margin-right: 2%;
+}

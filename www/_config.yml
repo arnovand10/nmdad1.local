@@ -1,0 +1,41 @@
+# Site settings
+# -------------
+baseurl     : "" # the subpath of your site, e.g. /blog/
+colour      : primary
+language    : nl
+host        : 127.0.0.1
+port        : 4000
+
+# SEO
+# ---
+title      : "WAF"
+description: "New Media Design & Development I at Artevelde University College Ghent"
+author     : Arno van Den Bossche & Bjorn Truye
+tracking_id: "UA-79628300-1"
+url        : "http://127.0.0.1:4000/index.html"
+# image      :
+
+# Build settings
+# --------------
+gems:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  sass_dir: ./css
+  style: compressed
+include: 
+  ['_pages']
+exclude:
+  - Gemfile
+  - LICENSE
+  - README.md

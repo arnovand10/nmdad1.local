@@ -1054,10 +1054,10 @@ ready(function(){
                             
                             html += '</ul>';
                             if(activiteit.acceptorId == "CANCELED"){
-                                html+= "<p id='warning'><strong>Info:De gebruiker heeft de acctiviteit geanulleerd, wij hebben uw activiteit weer zichtbaar gemaakt voor andere gebruikers.</strong></p>"
+                                html+= "<p id='warning'><strong>Info:De gebruiker heeft de activiteit geanulleerd, wij hebben uw activiteit weer zichtbaar gemaakt voor andere gebruikers.</strong></p>"
                             }
                             if(activiteit.DeletedAt == "DELETED"){
-                                html+= "<p id='warning'><strong>Info:De gebruiker heeft de acctiviteit verwijderd, deze activiteit is niet meer beschikbaar.</strong></p>"
+                                html+= "<p id='warning'><strong>Info:De gebruiker heeft de activiteit verwijderd, deze activiteit is niet meer beschikbaar.</strong></p>"
                             }
                             if(activiteitVerlopen == true){
                                 html+="<p id='warning' style='color: rgb(219, 200, 170);'><strong>Info: De activiteit is verlopen</strong></p>"
